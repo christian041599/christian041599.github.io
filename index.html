@@ -1,12 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello Mom</h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Christian Hollander Web Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
+
+    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lightbox-->
+
+    <link rel="stylesheet" href="vendor/glightbox/css/glightbox.min.css" />
+
+    <!-- Leaflet-->
+
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+
+    <!-- theme stylesheet-->
+
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet" />
+
+    <!-- Custom stylesheet - for your changes-->
+
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Favicon-->
+
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!--Bootstrap-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <section
+      class="intro dark-overlay bg-cover bg-fixed bg-center d-flex align-items-center"
+      id="intro"
+      style="background-image: url('img/ein-steig.jpg')"
+    >
+      <div class="overlay-content w-100 text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 mx-auto">
+              <p class="fst-italic intro-text">Web Portfolio</p>
+              <h1 class="text-uppercase intro-heading letter-spacing-2">Christian Hollander</h1>
+              <p class="fst-italic intro-text mb-0">Junior Software Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- intro end-->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light sticky-top border-bottom border-gray-200 bg-white py-lg-0"
+      id="navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#intro">Portfolio</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link py-lg-3 active" href="#intro">Home</a></li>
+            <li class="nav-item"><a class="nav-link py-lg-3" href="#about">About </a></li>
+            <li class="nav-item"><a class="nav-link py-lg-3" href="#services">Info</a></li>
+            <li class="nav-item"><a class="nav-link py-lg-3" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link py-lg-3" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- about-->
+
+    <section id="about">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="underline text-uppercase">About me</h2>
+            <p class="lead">Who am I?</p>
+            <p>
+              I’m someone that loves having tons of brain stimulation. Video games, puzzles, or brain teasers. Whatever
+              it is, as long as it keeps the cogs in my brain turning my attention will be fully focused and locked into
+              that activity. I’ve been told I’m a very sociable person and someone many people can call a friend. I grew
+              up here in St. Louis until the age of 3 when my family and I moved to Portland, Maine. After freezing to
+              death for the next 5 years, we came back here to be closer to family. I’ve lived in St. Louis ever since
+              and mostly enjoyed my stay.
+            </p>
+            <p>
+              Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was
+              improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must
+              form into gate. Me we offending prevailed discovery.
+            </p>
+          </div>
+          <div class="col-lg-5 mx-auto">
+            <p>
+              <img
+                class="img-fluid rounded-circle"
+                src="img/christian-logos_transparent.png"
+                alt="Christian Logo"
+                width="500px"
+                height="500px"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about end-->
+
+    <!-- Services-->
+
+    <section class="bg-gray-200" id="services">
+      <div class="container">
+        <div class="row services">
+          <div class="col-lg-12">
+            <h2 class="underline text-uppercase">Info</h2>
+            <div class="row gy-4 gx-5">
+              <div class="col-md-4">
+                <div class="mb-4"><i class="fas fa-desktop fa-3x"></i></div>
+                <h5>
+                  <a
+                    href="christian-resume.pdf"
+                    target="_blank"
+                    class="text-decoration-none text-light badge rounded-pill bg-dark"
+                    >Resume</a
+                  >
+                </h5>
+              </div>
+              <div class="col-md-4">
+                <div class="mb-4"><i class="fas fa-print fa-3x"></i></div>
+                <h5>
+                  <a
+                    href="course-work.html"
+                    target="_blank"
+                    class="text-decoration-none text-light badge rounded-pill bg-dark"
+                    >Course Work</a
+                  >
+                </h5>
+                <br />
+                <a
+                  href="../MIDTERM/distribution/index.html"
+                  target="_blank"
+                  class="text-decoration-none text-dark badge"
+                  >-Law Day Run</a
+                >
+                <br />
+                <a
+                  href="../MIDTERM/distribution/index.html"
+                  target="_blank"
+                  class="text-decoration-none text-dark badge"
+                  >-Manga Library (React App)</a
+                >
+              </div>
+              <div class="col-md-4">
+                <div class="mb-4"><i class="fas fa-globe-americas fa-3x"></i></div>
+                <h5>
+                  <a
+                    href="https://www.linkedin.com/in/christian-h-62b679251/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-decoration-none text-light badge rounded-pill bg-dark"
+                    >Linkedin</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services end-->
+
+    <!-- Portfolio / gallery-->
+
+    <section id="portfolio" class="bg-dark text-gray-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <h2 class="underline text-uppercase">Portfolio</h2>
+            <p>
+              <a href="portfolio.html" target="_blank" rel="noopener noreferrer"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Portfolio / gallery end-->
+
+    <!-- text page-->
+
+    <!-- text page end-->
+
+    <!-- contact-->
+
+    <section class="pb-5" id="contact">
+      <div class="container">
+        <h2 class="underline">Contact</h2>
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <iframe
+              id="JotFormIFrame-223453718133150"
+              title="Lime Theme Contact Us Form"
+              onload="window.parent.scrollTo(0,0)"
+              allowtransparency="true"
+              allowfullscreen="true"
+              allow="geolocation; microphone; camera"
+              src="https://form.jotform.com/223453718133150"
+              frameborder="0"
+              style="min-width: 100%; height: 539px; border: none"
+              scrolling="no"
+            >
+            </iframe>
+            <script type="text/javascript">
+              var ifr = document.getElementById('JotFormIFrame-223453718133150');
+              if (ifr) {
+                var src = ifr.src;
+                var iframeParams = [];
+                if (window.location.href && window.location.href.indexOf('?') > -1) {
+                  iframeParams = iframeParams.concat(
+                    window.location.href.substr(window.location.href.indexOf('?') + 1).split('&')
+                  );
+                }
+                if (src && src.indexOf('?') > -1) {
+                  iframeParams = iframeParams.concat(src.substr(src.indexOf('?') + 1).split('&'));
+                  src = src.substr(0, src.indexOf('?'));
+                }
+                iframeParams.push('isIframeEmbed=1');
+                ifr.src = src + '?' + iframeParams.join('&');
+              }
+              window.handleIFrameMessage = function (e) {
+                if (typeof e.data === 'object') {
+                  return;
+                }
+                var args = e.data.split(':');
+                if (args.length > 2) {
+                  iframe = document.getElementById('JotFormIFrame-' + args[args.length - 1]);
+                } else {
+                  iframe = document.getElementById('JotFormIFrame');
+                }
+                if (!iframe) {
+                  return;
+                }
+                switch (args[0]) {
+                  case 'scrollIntoView':
+                    iframe.scrollIntoView();
+                    break;
+                  case 'setHeight':
+                    iframe.style.height = args[1] + 'px';
+                    break;
+                  case 'collapseErrorPage':
+                    if (iframe.clientHeight > window.innerHeight) {
+                      iframe.style.height = window.innerHeight + 'px';
+                    }
+                    break;
+                  case 'reloadPage':
+                    window.location.reload();
+                    break;
+                  case 'loadScript':
+                    if (!window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])) {
+                      break;
+                    }
+                    var src = args[1];
+                    if (args.length > 3) {
+                      src = args[1] + ':' + args[2];
+                    }
+                    var script = document.createElement('script');
+                    script.src = src;
+                    script.type = 'text/javascript';
+                    document.body.appendChild(script);
+                    break;
+                  case 'exitFullscreen':
+                    if (window.document.exitFullscreen) window.document.exitFullscreen();
+                    else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
+                    else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
+                    else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
+                    else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
+                    break;
+                }
+                var isJotForm = e.origin.indexOf('jotform') > -1 ? true : false;
+                if (isJotForm && 'contentWindow' in iframe && 'postMessage' in iframe.contentWindow) {
+                  var urls = {
+                    docurl: encodeURIComponent(document.URL),
+                    referrer: encodeURIComponent(document.referrer),
+                  };
+                  iframe.contentWindow.postMessage(JSON.stringify({ type: 'urls', value: urls }), '*');
+                }
+              };
+              window.isPermitted = function (originUrl, whitelisted_domains) {
+                var url = document.createElement('a');
+                url.href = originUrl;
+                var hostname = url.hostname;
+                var result = false;
+                if (typeof hostname !== 'undefined') {
+                  whitelisted_domains.forEach(function (element) {
+                    if (hostname.slice(-1 * element.length - 1) === '.'.concat(element) || hostname === element) {
+                      result = true;
+                    }
+                  });
+                  return result;
+                }
+              };
+              if (window.addEventListener) {
+                window.addEventListener('message', handleIFrameMessage, false);
+              } else if (window.attachEvent) {
+                window.attachEvent('onmessage', handleIFrameMessage);
+              }
+            </script>
+          </div>
+          <div class="col-lg-6">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-gray-100 py-5">
+      <div class="container py-4">
+        <div class="row copyright gy-2">
+          <div class="col-md-6">
+            <p class="fst-italic mb-0 text-center text-md-start">&copy; 2022 Christian Hollander</p>
+          </div>
+          <div class="col-md-6">
+            <p class="fst-italic mb-0 text-center text-md-end">
+              Template by
+              <a class="text-reset" href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form"
+                >Bootstrapious</a
+              >
+            </p>
+
+            <!-- Please do not remove the backlink to us. It is part of the licence conditions. Thanks for understanding :)-->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript files-->
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/theme.js"></script>
+
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
